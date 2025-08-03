@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+
+    
+
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Eventos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="./img/perfil1.jpg" alt="Foto de perfil" class="foto-perfil">
+        <h1 class="name-principal">André</h1>
+        <p class="cabecalho-sub-titulo">FDR</p>
+
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+               André Santos conhecido artisticamente como fdr Filho do Rei nasceu em Brasília em 1983 iniciou sua carreira no rap em 1998 com um grupo raciocínio periférico , após diversas experiências musicais no sécular   converteu-se ao cristianismo e seguiu a carreira solo destacando-se por suas letras cristãs e participações em eventos sociais com o álbum  liberdade para as favelas e colaborações de artistas renomados como duck gay da tribo da periferia,  look 3 um só , FDR  consolidou como um dos expoentes do rap Cristão , atualmente seu foco é o EP Pra tua Glória trabalho de 2025, em 2024 lançou o álbum Só Ele tem Poder com 12 faixas, hoje em Caxias do Sul onde une sua arte a mensagem de  inclusão e fé,  sua jornada artística social reflete a missão de levar a Cristo a diferentes públicos,  mostrando a potência de fé e transformação pessoal e comunitária.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Eventos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/evento1.jpg" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Agendamento Barbearia</h3>
+                    <p class="paragrafos-projetos">Este projeto é uma aplicação web desenvolvida para facilitar o
+                        agendamento de horários em uma barbearia, proporcionando praticidade tanto para os clientes
+                        quanto para os profissionais.
+
+                        Funcionalidades principais:
+                        Cadastro de clientes e barbearias: criação de contas com informações básicas.
+
+                        Agendamento online: o cliente escolhe o barbeiro, serviço, data e horário disponíveis.
+
+                        Gestão de horários: o sistema bloqueia horários já agendados, evitando conflitos.
+
+                        Área administrativa: painel para o barbeiro visualizar e gerenciar os agendamentos.
+
+                        Notificações (opcional): confirmação ou lembrete de agendamento por e-mail ou notificação no
+                        sistema.</p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto2.jpg" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">E-commerce</h3>
+                    <p class="paragrafos-projetos">Este projeto é uma aplicação web de e-commerce desenvolvida com o
+                        objetivo de simular uma loja virtual completa. O sistema permite que usuários naveguem por
+                        produtos, visualizem detalhes, adicionem itens ao carrinho e finalizem compras. Catálogo de
+                        produtos: listagem dinâmica de produtos com imagens, preços e descrições.
+
+                        Filtro e busca: permite que o usuário encontre rapidamente produtos por categoria ou
+                        palavra-chave.
+
+                        Carrinho de compras: funcionalidade para adicionar, remover e atualizar itens no carrinho.
+
+                        Página de checkout: formulário para preenchimento dos dados do cliente e simulação de
+                        finalização da compra.
+
+                        Área administrativa (opcional): gerenciamento de produtos, categorias e pedidos. </p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto3.jpg" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">projeto 3</h3>
+                    <p class="paragrafos-projetos">Loja tecnologia criada com carinho e dedicação na madrugada de
+                        varias
+                        dias quebrando a cabeça mas com muita garra consegui terminar</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWatsApp(event)">
+
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-fomr" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-fomr" placeholder="Digite sua mensagem" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WattsApp </button>
+
+        </form>
+
+    </section>
+
+    <script>
+        function enviarWatsApp(event) {
+            event.preventDefault(); // Impede o envio do formulário padrão
+
+            const nome = document.getElementById('nome');
+            const mensagem = document.getElementById('mensagem');
+            const telefone = '5554991015900';
+
+            const texto = `Olá, meu nome é ${nome.value}, ${mensagem.value}`
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`;
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <footer class="rodape">
+        <p class="redes-sociais">Me siga nas redes sociais</p>
+        <div class="redes-sociais">
+            <a href="https://www.youtube.com/@fdrfilhodorei" target="_blank">
+                <img src="./img/youtube.png" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/share/1BxDsUcfwE/?mibextid=wwXIfr" target="_blank">
+                <img src="./img/facebook.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/fdr061?utm_source=ig_web_button_share_sheet&igsh=d3R4bWVmN2J3aWNn" target="_blank">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
