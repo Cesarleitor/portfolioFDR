@@ -100,7 +100,7 @@ body {
 
 .nome-principal,
 .cabecalho-sub-titulo {
-    font-family: 'impact', sans-serif;
+    font-family: 'marker felt', fantasy;
 }
 
 h1 {
@@ -163,12 +163,7 @@ h1 {
 
 
 
-.data {
-    font-size: 1.2rem;
-    color: var(--claro);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+
 
 
 .sobre-paragrafo {
@@ -198,7 +193,7 @@ h1 {
     border-radius: 16px;
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
-    overflow: hidden;
+   
     transition: all 0.3s ease;
     cursor: pointer;
     margin-bottom: 200px;
@@ -228,7 +223,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 
 
@@ -247,6 +242,13 @@ h1 {
 
 .caixa-textos-projetos {
     padding: 1.5rem;
+}
+
+.data {
+    font-size: 1.2rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .info-projetos {
