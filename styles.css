@@ -156,6 +156,8 @@ h1 {
 
 }
 
+
+
 .data {
     font-size: 1.2rem;
     color: var(--claro);
@@ -418,6 +420,13 @@ section {
 
     .foto-perfil {
         width: 200px;
+    }
+
+    .video-apresentacao iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
     }
 
     .sobre-caixa {
