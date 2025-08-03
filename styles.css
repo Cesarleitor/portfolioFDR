@@ -447,4 +447,17 @@ section {
     .botao-form {
         padding: 0.8rem;
     }
+
+    .video-apresentacao iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-apresentacao .sobre-titulo {
+    font-size: 2rem;
+    padding: 0 10px;
+    text-align: center;
+}
 }
