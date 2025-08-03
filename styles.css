@@ -268,7 +268,7 @@ h1 {
 .sobre-caixa,
 .projetos-card,
 .formulario-contato {
-  background-color: #0f172a; /* Mais escuro e com menos transparência */
+  background-color: rgba(20, 26, 42, 0.8); /* Mais escuro e com menos transparência */
   color: #fff;
   backdrop-filter: blur(8px);
   border-radius: 20px;
