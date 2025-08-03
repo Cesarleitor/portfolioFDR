@@ -88,7 +88,7 @@ body {
     flex-direction: column;
 }
 
-.foto-perfil {
+.foto-perfil{
     width: 350px;
     right: 350px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.0.3);
@@ -97,6 +97,10 @@ body {
     animation: flutuar 3s ease-in-out infinite;
 
 }
+
+
+
+
 
 .nome-principal,
 .cabecalho-sub-titulo {
@@ -134,7 +138,7 @@ h1 {
     font-size: 3.5rem;
     color: var(--claro);
     font-weight: bold;
-    margin: 20px;
+    margin: 10px;
     animation: flutuar 3s ease-in-out infinite;
     border-radius: 0.5rem;
     text-align: center;
@@ -224,7 +228,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 10px auto;
 
 
 }
@@ -275,7 +279,7 @@ h1 {
 
 .formulario-contato {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .formulario-contato:hover {
@@ -384,7 +388,7 @@ section:hover {
 }
 
 section {
-    margin-top: 600px;
+    margin-top: 200px;
     padding: 40px 20px;
 }
 
