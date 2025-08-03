@@ -28,9 +28,11 @@ body {
     background-color: var(--escuro);
     color: var(--maisEscuro);
     font-size: 16px;
-    background-image: url('./img/fundo.jpg');
-    
-    
+    background-image: url('./img/fundo1.jpg');
+
+
+
+
 }
 
 
@@ -93,7 +95,7 @@ body {
     border-radius: 50%;
     border: 4px solid var(--vidro);
     animation: flutuar 3s ease-in-out infinite;
-    
+
 }
 
 h1 {
@@ -119,16 +121,18 @@ h1 {
 }
 
 .sobre {
-    padding: 6rem 2rem;
+    padding: 6rem 3rem;
 
 }
 
 .sobre-titulo {
-    
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--claro);
+    font-weight: bold;
+    margin: 20px;
+    animation: flutuar 3s ease-in-out infinite;
+    border-radius: 0.5rem;
     text-align: center;
-    margin-bottom: 20px;
 
 }
 
@@ -142,8 +146,21 @@ h1 {
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(225, 225, 225, 0.05);
-    
 
+
+}
+
+.sobre-caixa:hover {
+    box-shadow: 0 10px 20px rgba(241, 241, 243, 0.3);
+    transform: translateY(-10px) scale(1.03);
+
+}
+
+.data {
+    font-size: 1.2rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 
@@ -152,7 +169,7 @@ h1 {
     line-height: 1.8rem;
     font-size: 1rem;
     padding: 0 10px;
-    color: rgba(248, 249, 250, 0.8); 
+    color: rgba(245, 244, 241, 0.8);
 
 
 }
@@ -174,18 +191,22 @@ h1 {
 }
 
 .projetos-titulo {
+    font-size: 3.5rem;
     color: var(--claro);
+    font-weight: bold;
+    margin: 20px;
+    animation: flutuar 3s ease-in-out infinite;
+    border-radius: 0.5rem;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-
 }
+
+
 
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(241, 241, 243, 0.3);
     transform: translateY(-10px) scale(1.03);
 
-    
+
 
 }
 
@@ -213,9 +234,16 @@ h1 {
     padding: 1.5rem;
 }
 
+.info-projetos {
+    font-size: 1.2rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
 .paragrafos-projetos {
-    color: rgba(226, 232, 240, 0.8);
+    color: var(--claro);
     line-height: 1.25rem;
 }
 
@@ -228,17 +256,25 @@ h1 {
 
 }
 
+.formulario-contato:hover {
+    box-shadow: 0 10px 20px rgba(241, 241, 243, 0.3);
+    transform: translateY(-10px) scale(1.03);
+}
+
 .contatos-titulo {
-     color: var(--claro);
+    font-size: 3.5rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: 20px;
+    animation: flutuar 3s ease-in-out infinite;
+    border-radius: 0.5rem;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
 }
 
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    background: rgba(225, 225, 225, 0.05);
+    background: rgba(247, 2, 2, 0.05);
     backdrop-filter: blur(5px);
     padding: 2rem;
     border-radius: 16px;
@@ -253,13 +289,13 @@ h1 {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    color: var(--maisEscuro);
+    color: var(--claro);
     border: 1px solid var(--vidro);
     outline: none;
 }
 
 .campo-fomr:focus {
-    border-color: var(--primaria);
+    border-color: var(--claro);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
@@ -321,15 +357,15 @@ section {
 }
 
 .rodape {
-    background-color: var(--maisEscuro); 
+    background-color: var(--maisEscuro);
     color: #ece8e8;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     border-radius: 20px;
 }
 
 .redes-sociais {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -338,6 +374,7 @@ section {
 .redes-sociais a img {
     width: 40px;
     transition: transform 0.3s ease;
+
 }
 
 .redes-sociais a:hover img {
