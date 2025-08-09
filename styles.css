@@ -347,7 +347,8 @@ section {
 }
 
 .rodape {
-  background-color: var(--maisEscuro);
+    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+    var(--maisEscuro); 
   color: #ece8e8;
   text-align: center;
   padding: 20px;
@@ -369,6 +370,14 @@ section {
 .redes-sociais a:hover img {
   transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(241, 241, 243, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 0 0 8px 8px;
 }
 
 /* RESPONSIVIDADE */
